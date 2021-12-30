@@ -42,15 +42,28 @@ public class pasta_bar {
 								"Napolitana", "Vegetable mix", "Mushrooms", "Box" };
 		int[] prices = { 50, 60, 120, 120, 140, 100, 100, 100, 80, 50, 80, 80, 80, 50, 50, 20 };
 		
+		String ingredient = "";
+		int price = 0;
+		int i = 0;
+		
 		System.out.println("*** RYAN'S PASTA BAR ***\n");
 		System.out.println("HELLO AND WELCOME TO RYAN'S PASTA BAR!!\n");
 		System.out.println("PLEASE FEEL FREE TO CHOOSE YOUR BODIES FUEL FOR TODAY\n");
 		print(ingredients, prices);
 		System.out.println();
 		
-		String ingredient = "";
+		while(!ingredient.equals("Order")) {
+			System.out.print("Choose an ingredient for your pasta: ");
+			ingredient = s.nextLine();
+			if(ingredient.equals("Order")) {
+				price += 0;
+			} else {
+			i = findIngredient(ingredients, ingredient);
+			price += prices[i];
+			}
+		}
 		
-		
+
 	
 	}
 
