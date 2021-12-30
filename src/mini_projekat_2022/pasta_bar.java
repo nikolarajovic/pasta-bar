@@ -63,7 +63,17 @@ public class pasta_bar {
 			}
 		}
 		
-
+		System.out.print("\nEnter your phone number: ");
+		String customer = s.next();
+		
+		if (isRegularCustomer(regularCustomers, customer) == true) {
+			price -= (price * 10 / 100);
+		} else {
+			price = price;
+		}
+		
+		System.out.println("\nYOUR PASTA COSTS: " + price + " RSD");
+		System.out.println("\n*** ENJOY!! WE KNOW YOU WILL!! ***");
 	
 	}
 
