@@ -24,6 +24,12 @@ public class pasta_bar {
 		return false;
 	}
 	
+	public static void print(String[] ingredients, int[] prices) {
+		for (int i = 0; i < prices.length; i++) {
+			System.out.println(ingredients[i] + " - " + prices[i]);
+		}
+	}
+	
 	public static void main(String[] args) {
 
 		Scanner s = new Scanner(System.in);
@@ -35,6 +41,15 @@ public class pasta_bar {
 								"Smoked cheese", "Parmesan", "Sour cream", "Pesto sauce",
 								"Napolitana", "Vegetable mix", "Mushrooms", "Box" };
 		int[] prices = { 50, 60, 120, 120, 140, 100, 100, 100, 80, 50, 80, 80, 80, 50, 50, 20 };
+		
+		System.out.println("*** RYAN'S PASTA BAR ***\n");
+		System.out.println("HELLO AND WELCOME TO RYAN'S PASTA BAR!!\n");
+		System.out.println("PLEASE FEEL FREE TO CHOOSE YOUR BODIES FUEL FOR TODAY\n");
+		print(ingredients, prices);
+		System.out.println();
+		
+		String ingredient = "";
+		
 		
 	
 	}
